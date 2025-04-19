@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endria Carem | Desenvolvedora Full Stack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Sound Control -->
+    <div class="sound-control">
+      <button id="toggleSound" aria-label="Ativar/Desativar Sons">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+
+    <header>
+      <div class="container">
+        <a href="#" class="logo"> <span>Endria</span>Carem </a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#education" class="nav-link">Formação</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+            <li class="mobile-only">
+              <button class="theme-toggle mobile-theme-toggle">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+            <li class="mobile-only">
+              <button id="mobileToggleSound" class="mobile-sound-toggle">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </li>
+            <li class="mobile-only close-menu">
+              <button class="close-menu-btn">
+                <i class="fas fa-times"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <button class="theme-toggle desktop-only">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="glitch" data-text="Endria Carem">Endria Carem</h1>
+              <div class="typing-container">
+                <p class="typing-text">Desenvolvedora Full Stack</p>
+              </div>
+              <p class="hero-description">
+                Criando soluções digitais completas e inovadoras, do front-end
+                ao back-end.
+              </p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn primary-btn">Entre em Contato</a>
+                <a href="#about" class="btn secondary-btn">Saiba Mais</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="profile-image">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-25%20at%2014.33.09-nRB6JhalL5U3iAV5AVIG20DDnM3hqV.jpeg"
+                  alt="Endria Carem"
+                />
+              </div>
+              <!-- Atualizar links na seção hero -->
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/endria-carem-419007199/"
+                  class="social-link"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/EndriaCarem"
+                  class="social-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/Endria_Keury"
+                  class="social-link"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="javascript:location.href = 'mailto:' + ['endrya161624','gmail.com'].join('@')"
+                  class="social-link"
+                  aria-label="Email"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Quem sou</span>
+            <h2 class="section-title">Sobre Mim</h2>
+          </div>
+          <div class="about-content">
+            <div class="about-image">
+              <div class="image-wrapper">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-20%20at%2015.35.23-i8LHV85Z3K5V21TftGz9oZ9NoCZua8.jpeg"
+                  alt="Endria Carem"
+                />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                Olá! Sou uma
+                <strong>desenvolvedora full stack</strong> apaixonada por criar
+                aplicações web completas e inovadoras. Minha jornada na
+                programação começou durante minha formação em Ciência da
+                Computação, e desde então tenho me dedicado a aprimorar minhas
+                habilidades em diversas tecnologias.
+              </p>
+              <p>
+                Atualmente, estou focada em desenvolvimento web e inteligência
+                artificial, combinando interfaces intuitivas com sistemas
+                robustos. Tenho experiência com React, Node.js, Python e
+                diversas tecnologias de banco de dados.
+              </p>
+              <div class="about-info">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Formação</h3>
+                    <p>Bacharelado em Ciência da Computação - UFMA</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Experiência</h3>
+                    <p>Desenvolvimento Full Stack</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-code-branch"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Especialidades</h3>
+                    <p>Web, IA, Banco de Dados</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-language"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Idiomas</h3>
+                    <p>Português (Nativo), Inglês</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">O que eu faço</span>
+            <h2 class="section-title">Minhas Habilidades</h2>
+          </div>
+          <div class="skills-content">
+            <div class="skills-category">
+              <h3 class="category-title">Front-end</h3>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                  </div>
+                  <h4 class="skill-name">React</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                  </div>
+                  <h4 class="skill-name">HTML5</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="95%"></div>
+                  </div>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                  </div>
+                  <h4 class="skill-name">CSS3</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="100%"></div>
+                  </div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                  </div>
+                  <h4 class="skill-name">JavaScript</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3 class="category-title">Back-end</h3>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-node-js"></i>
+                  </div>
+                  <h4 class="skill-name">Node.js</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <h4 class="skill-name">Express</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                  </div>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                  </div>
+                  <h4 class="skill-name">Python</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                  </div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <h4 class="skill-name">MongoDB</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3 class="category-title">Ferramentas & Outros</h3>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-git-alt"></i>
+                  </div>
+                  <h4 class="skill-name">Git</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fab fa-docker"></i>
+                  </div>
+                  <h4 class="skill-name">Docker</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                  </div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h4 class="skill-name">Flutter</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                  <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <h4 class="skill-name">IA</h4>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                  </div>
+                  <span class="skill-percentage">70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="education">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Meu percurso</span>
+            <h2 class="section-title">Formação Acadêmica</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2023 - Presente</div>
+              <div class="timeline-content">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p class="timeline-place">Instituição de Ensino</p>
+                <p class="timeline-description">
+                  Formação em tecnologias de desenvolvimento de software, com
+                  foco em programação, banco de dados e engenharia de software.
+                </p>
+                <div class="timeline-progress">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                  </div>
+                  <span class="progress-text">Em andamento</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Especialização em Desenvolvimento Web</h3>
+                <p class="timeline-place">Curso Online</p>
+                <p class="timeline-description">
+                  Especialização em tecnologias modernas de desenvolvimento web,
+                  incluindo frameworks JavaScript, UX/UI Design e
+                  desenvolvimento mobile.
+                </p>
+                <div class="timeline-progress">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                  </div>
+                  <span class="progress-text">Concluído</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2025</div>
+              <div class="timeline-content">
+                <h3>Cibersegurança</h3>
+                <p class="timeline-place">Plataforma - Cisco Networking Academy</p>
+                <p class="timeline-description">
+                    Ensinamentos voltados à proteção de sistemas e redes, com foco em identificar falhas, prevenir ataques e reagir a incidentes com eficiência. O curso explora conceitos de criptografia, análise de riscos e segurança em nuvem, preparando para enfrentar ameaças reais no ambiente digital.
+                </p>
+                <div class="timeline-progress">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                  </div>
+                  <span class="progress-text">Concluído</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Vamos conversar</span>
+            <h2 class="section-title">Entre em Contato</h2>
+          </div>
+
+          <div class="contact-content">
+            <!-- Informações de contato -->
+            <div class="contact-info">
+              <!-- Atualizar links na seção de contato -->
+              <div class="contact-info-grid">
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h3>Email</h3>
+                    <p>endrya161624@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h3>LinkedIn</h3>
+                    <p>endria-carem-419007199</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h3>GitHub</h3>
+                    <p>EndriaCarem</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="contact-info-text">
+                    <h3>Instagram</h3>
+                    <p>Endria_Keury</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulário de contato compacto -->
+            <div class="contact-form-container">
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Nome"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Assunto"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Mensagem"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                  ENVIAR MENSAGEM
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mensagem de sucesso -->
+        <div class="success-message" id="successMessage">
+          <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <p>Mensagem enviada com sucesso!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo"><span>Endria</span>Carem</div>
+          <p class="footer-text">
+            Desenvolvedora Full Stack apaixonada por criar soluções digitais
+            inovadoras.
+          </p>
+          <!-- Atualizar links no rodapé -->
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/endria-carem-419007199/"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/EndriaCarem"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/Endria_Keury"
+              class="social-link"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="javascript:location.href = 'mailto:' + ['endrya161624','gmail.com'].join('@')"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Endria Carem. Todos os direitos reservados.</p>
+          <a href="#home" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Audio files -->
+    <audio id="clickSound" preload="auto">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="hoverSound" preload="auto">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="successSound" preload="auto">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/2005/2005-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="toggleSound" preload="auto">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/209/209-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Music Player -->
+<div class="music-player-container">
+    <!-- Disco giratório -->
+    <div class="vinyl-disc" id="vinylDisc">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXBkN3J0cGx1bzAyYWMzcm9wb3l0NjFtMmV2ZGYzYzB3N2ZkNGUxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8FM8uY0KjydEohrjrh/giphy.gif" alt="Disco de vinil">
+    </div>
+    
+    <!-- Player de música -->
+    <div class="music-player" id="musicPlayer">
+      <div class="player-header">
+        <h3>Player de Música</h3>
+        <button class="close-player" id="closePlayer">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="song-info">
+        <h4 id="currentSongTitle">Selecione uma música</h4>
+        <p id="currentSongArtist"></p>
+      </div>
+      
+      <div class="player-controls">
+        <button id="prevButton" class="control-button">
+          <i class="fas fa-step-backward"></i>
+        </button>
+        <button id="playPauseButton" class="play-button">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="nextButton" class="control-button">
+          <i class="fas fa-step-forward"></i>
+        </button>
+      </div>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+          <span id="totalTime">0:00</span>
+        </div>
+      </div>
+      
+      <div class="volume-container">
+        <button id="muteButton" class="volume-button">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+      </div>
+      
+      <div class="playlist-container">
+        <h4 class="playlist-title">
+          <i class="fas fa-music"></i> Playlist
+        </h4>
+        <ul class="playlist" id="playlist">
+          <!-- As músicas serão adicionadas aqui via JavaScript -->
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Elemento de áudio oculto -->
+    <audio id="audioPlayer"></audio>
+  </div>
+  </body>
+</html>
