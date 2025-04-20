@@ -632,70 +632,73 @@
       />
     </audio>
 
+    <!-- Music Player -->
+    <div class="music-player-container">
+      <!-- Disco giratório -->
+      <div class="vinyl-disc" id="vinylDisc">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXBkN3J0cGx1bzAyYWMzcm9wb3l0NjFtMmV2ZGYzYzB3N2ZkNGUxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8FM8uY0KjydEohrjrh/giphy.gif" alt="Disco de vinil">
+      </div>
+      
+      <!-- Player de música -->
+      <div class="music-player" id="musicPlayer">
+        <div class="player-header">
+          <h3>Player de Música</h3>
+          <button class="close-player" id="closePlayer">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="song-info">
+          <h4 id="currentSongTitle">Selecione uma música</h4>
+          <p id="currentSongArtist"></p>
+        </div>
+        
+        <div class="player-controls">
+          <button id="prevButton" class="control-button">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button id="playPauseButton" class="play-button">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="nextButton" class="control-button">
+            <i class="fas fa-step-forward"></i>
+          </button>
+        </div>
+        
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress" id="progress"></div>
+          </div>
+          <div class="time-display">
+            <span id="currentTime">0:00</span>
+            <span id="totalTime">0:00</span>
+          </div>
+        </div>
+        
+        <div class="volume-container">
+          <button id="muteButton" class="volume-button">
+            <i class="fas fa-volume-up"></i>
+          </button>
+          <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+        </div>
+        
+        <div class="playlist-container">
+          <h4 class="playlist-title">
+            <i class="fas fa-music"></i> Playlist
+          </h4>
+          <ul class="playlist" id="playlist">
+            <!-- As músicas serão adicionadas aqui via JavaScript -->
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Container para o iframe do YouTube (oculto) -->
+      <div id="youtubePlayerContainer" style="position: absolute; top: -9999px; left: -9999px;">
+        <div id="youtubePlayer"></div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
-    <!-- Music Player -->
-<div class="music-player-container">
-    <!-- Disco giratório -->
-    <div class="vinyl-disc" id="vinylDisc">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXBkN3J0cGx1bzAyYWMzcm9wb3l0NjFtMmV2ZGYzYzB3N2ZkNGUxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8FM8uY0KjydEohrjrh/giphy.gif" alt="Disco de vinil">
-    </div>
-    
-    <!-- Player de música -->
-    <div class="music-player" id="musicPlayer">
-      <div class="player-header">
-        <h3>Player de Música</h3>
-        <button class="close-player" id="closePlayer">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      
-      <div class="song-info">
-        <h4 id="currentSongTitle">Selecione uma música</h4>
-        <p id="currentSongArtist"></p>
-      </div>
-      
-      <div class="player-controls">
-        <button id="prevButton" class="control-button">
-          <i class="fas fa-step-backward"></i>
-        </button>
-        <button id="playPauseButton" class="play-button">
-          <i class="fas fa-play"></i>
-        </button>
-        <button id="nextButton" class="control-button">
-          <i class="fas fa-step-forward"></i>
-        </button>
-      </div>
-      
-      <div class="progress-container">
-        <div class="progress-bar" id="progressBar">
-          <div class="progress" id="progress"></div>
-        </div>
-        <div class="time-display">
-          <span id="currentTime">0:00</span>
-          <span id="totalTime">0:00</span>
-        </div>
-      </div>
-      
-      <div class="volume-container">
-        <button id="muteButton" class="volume-button">
-          <i class="fas fa-volume-up"></i>
-        </button>
-        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
-      </div>
-      
-      <div class="playlist-container">
-        <h4 class="playlist-title">
-          <i class="fas fa-music"></i> Playlist
-        </h4>
-        <ul class="playlist" id="playlist">
-          <!-- As músicas serão adicionadas aqui via JavaScript -->
-        </ul>
-      </div>
-    </div>
-    
-    <!-- Elemento de áudio oculto -->
-    <audio id="audioPlayer"></audio>
-  </div>
   </body>
 </html>
